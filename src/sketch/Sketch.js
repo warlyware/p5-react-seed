@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import p5 from 'p5';
 
-import sketch from './p5-sketch';
+import Sketch from './p5-sketch';
 
-export default class Sketch extends Component {
+export default class SketchComponent extends Component {
 
     componentDidMount() {
-        new p5(sketch);
-        console.log('asdf');
+        Sketch.start();
     }
 
     render() {

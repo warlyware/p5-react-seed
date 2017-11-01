@@ -11,4 +11,14 @@ const sketch = (p5) => {
     }
 }
 
-export default sketch;
+class Sketch {
+    constructor() {
+        this.p5 = p5;
+    }
+
+    start() {
+        new this.p5(sketch);
+    }
+}
+
+export default new Sketch();
