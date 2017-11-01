@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import p5 from 'p5';
 
 import './App.css';
-import sketch from './sketch';
+import Sketch from './sketch/Sketch';
 
 class App extends Component {
 
-  componentWillMount() {
-    window.p5 = p5;
+  componentDidMount() {
+    // new p5(sketch);
   }
 
   render() {
     return (
       <div className="App">
-        <div id="sketch"></div>
+        <Sketch />
       </div>
     );
   }
